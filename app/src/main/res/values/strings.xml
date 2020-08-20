@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Git-Run</string>
+    <string name="search">Search</string>
+    <!--COMPLETED (1) Add a string stating that an error has occurred-->
+    <string name="error_message">
+        Failed to get results. Please try again.
+    </string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.git_run.MainActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:id="@+id/search_field"
+        android:background="@drawable/bg_search_field"
+        android:layout_gravity="center_horizontal"
+        android:hint="Query please!!"/>
+<FrameLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerview"
+    android:visibility="invisible"/>
+
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="invisible"
+    android:id="@+id/progress"/>
+<TextView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="20sp"
+    android:visibility="invisible"
+    android:id="@+id/empty_data"
+    android:layout_gravity="center"
+    android:text="Something went Wrong!!"/>
+</FrameLayout>
+</LinearLayout>
